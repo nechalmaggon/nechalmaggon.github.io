@@ -7,40 +7,165 @@
 <meta name="description" content="Nibble is a Chrome extension that picks one of your starred Gmail newsletters each day and shows it on your new tab page.">
 <link rel="icon" href="/nibble/icon.png">
 <link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/nibble/nibble.css">
 </head>
-<body>
+<body class="np">
 <main>
-  <div class="hero">
-    <img src="/nibble/cookie.png" alt="Nibble cookie mascot" width="120">
-    <h1>nibble</h1>
-    <p class="tagline">One starred Gmail newsletter a day, waiting on your new tab.</p>
-    <!-- TODO: replace the first button with the Chrome Web Store link once the listing is live -->
-    <a class="btn disabled" aria-disabled="true">chrome web store — coming soon</a>
+  <!-- TODO: replace every href="#" on the Add to Chrome buttons with the Chrome Web Store link once the listing is live -->
+  <div class="top grid-bg">
+    <header>nibble.</header>
+    <span class="deco" aria-hidden="true" style="top:150px;right:10%;font-size:22px">♥</span>
+    <span class="deco" aria-hidden="true" style="top:390px;left:5%;font-size:20px">+</span>
+    <span class="deco" aria-hidden="true" style="top:400px;right:10%;font-size:18px">✦</span>
+    <div class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">· for anyone trying to read more ·</div>
+        <h1>your saved reads,<br>finally read.</h1>
+        <p>You subscribe to newsletters meaning to read them. They pile up in your inbox instead. Nibble picks one each day and puts it on your new tab page.</p>
+        <a class="btn" href="#">Add to Chrome</a>
+      </div>
+      <div class="hero-art">
+        <img src="/nibble/mascot.png" alt="Nibble cookie mascot">
+        <div class="win">
+          <div class="tb"><i></i><i></i><i></i><span>nibble.exe</span></div>
+          <div class="bd">
+            <div class="tag">newsletter</div>
+            <div class="date">today</div>
+            <h3>🍪 the article lying in your email</h3>
+            <div class="wait">patiently waiting</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <h2>what it does</h2>
-  <p>Too many newsletters, not enough time? Nibble helps you work through the backlog one article at a time, with no pressure.</p>
-  <ol class="steps">
-    <li>Star the newsletters you want to read in Gmail, as they arrive.</li>
-    <li>Open a new tab. Nibble picks one starred newsletter for the day.</li>
-    <li>Click <strong>Nibble</strong> to read it. Come back tomorrow for the next one.</li>
-  </ol>
+  <section class="problem">
+    <div class="eyebrow">· sounds like you? ·</div>
+    <h2>always trying to read more,<br>but never do?</h2>
+    <div class="cards">
+      <div class="card"><div class="ico">📬</div><h3>too many subscriptions</h3><p>You're subscribed to 15 newsletters because each one felt unmissable when you signed up. You've read maybe 2 of them this month.</p></div>
+      <div class="card"><div class="ico">📄</div><h3>meant to read later</h3><p>The ones that look interesting, you tell yourself you'll read later. Later was six weeks ago. It's still sitting in your inbox, unread.</p></div>
+      <div class="card"><div class="ico">🌱</div><h3>the pile keeps growing</h3><p>Every week the list gets longer. The guilt gets heavier. And somehow, opening your inbox stopped feeling good.</p></div>
+    </div>
+  </section>
 
-  <!-- TODO: add screenshots here (e.g. <img src="/nibble/screenshot-1.png" alt="...">) -->
+  <section class="meet grid-bg" style="background-color:#fff">
+    <div class="eyebrow">· here's the fix ·</div>
+    <h2>meet nibble.</h2>
+    <p class="lead">Nibble connects to Gmail and looks only at the newsletters you've starred. Each day, it puts one of them on your new tab page.</p>
+    <img class="mascot" src="/nibble/mascot-excited.png" alt="Excited Nibble cookie mascot">
+    <div class="browser">
+      <div class="b-tabs">
+        <div class="b-dots"><i></i><i></i><i></i></div>
+        <div class="b-tab"><span style="font-size:13px">🍪</span><span>New Tab</span><em>×</em></div>
+        <div class="b-plus">+</div>
+      </div>
+      <div class="b-bar"><span>←</span><span>→</span><span style="font-size:13px">⟳</span><div class="b-url">chrome://newtab</div><span>☆</span><span style="font-size:15px">⋮</span></div>
+      <div class="b-page">
+        <div class="b-lbl">your nibble for the day</div>
+        <div class="b-row">
+          <div class="side tabs"><div class="h">continue.tabs.sys</div><div class="l"><div>◆ Figma</div><div>◇ Gmail</div><div>○ auth.lo...</div></div></div>
+          <div class="mid">
+            <img src="/nibble/mascot.png" alt="">
+            <div class="win">
+              <div class="tb"><i></i><i></i><i></i><span>nibble.exe</span></div>
+              <div class="bd">
+                <div class="tag">Growth.Design @ growth.design</div>
+                <div class="date">Jan 8, 2025</div>
+                <h3>🍪 UX in 60 seconds</h3>
+                <div class="go">Nibble</div>
+              </div>
+            </div>
+          </div>
+          <div class="side bloom"><div class="h">BLOOMS.SYS</div><div class="l"><span aria-hidden="true">🌱</span><hr>○ nibble daily to nourish ○</div></div>
+        </div>
+        <div class="b-dock"><span>G</span><span>✦</span><span>in</span><span>◆</span><span>+</span></div>
+      </div>
+    </div>
+  </section>
 
-  <h2>extras</h2>
-  <ul>
-    <li><strong>Reading garden:</strong> read daily and your garden grows. Skip a day and it wilts.</li>
-    <li><strong>Shortcuts and recent tabs:</strong> your most-visited sites and recently closed tabs, right on the page.</li>
-    <li><strong>Six themes</strong> to pick from.</li>
-    <li>Won't repeat the same sender too often.</li>
-  </ul>
+  <section class="how grid-bg">
+    <div class="eyebrow">· how it works ·</div>
+    <div class="steps">
+      <div class="step"><div class="n">01</div><h3>setup</h3><p>Install Nibble from the Chrome Web Store and connect your Gmail account. Takes less than a minute.</p></div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="step"><div class="n">02</div><h3>star</h3><p>In Gmail, star the newsletter emails you want to read. Don't worry about any other starred items. Nibble will hunt for relevant content.</p></div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="step"><div class="n">03</div><h3>nibble</h3><p>Every new tab, one article from your starred list. It finds you. You don't have to go looking.</p></div>
+    </div>
+    <div class="garden">
+      <div class="n">04</div>
+      <h3>nibble, daily, watch it bloom</h3>
+      <p>every day you nibble, your garden gets one bloom fuller.</p>
+      <div class="plants">
+        <div class="row" aria-hidden="true">
+          <div class="pl"><span style="font-size:9px;color:#8b5e3c;margin-bottom:1px">●</span></div>
+          <div class="pl"><span style="font-size:18px">🌱</span></div>
+          <div class="pl"><span style="font-size:24px;color:#C4527A;margin-bottom:2px">✿</span><div class="stem" style="height:18px"></div></div>
+          <div class="pl cl">
+            <span style="font-size:16px">🌱</span>
+            <div class="pl"><span style="font-size:26px;color:#c3a8e8;margin-bottom:2px">❀</span><div class="stem" style="height:20px"></div></div>
+            <span style="font-size:18px">🌱</span>
+          </div>
+          <div class="pl cl big">
+            <span class="bee" style="top:-2px;left:8px;font-size:13px">🐝</span>
+            <span class="bee" style="top:4px;right:4px;font-size:12px">🐝</span>
+            <span style="font-size:16px">🌱</span>
+            <div class="pl"><span style="font-size:22px;color:#FFB6C1;margin-bottom:2px">✿</span><div class="stem" style="height:16px"></div></div>
+            <div class="pl"><span style="font-size:30px;color:#C4527A;margin-bottom:2px">❀</span><div class="stem" style="height:26px"></div></div>
+            <div class="pl"><span style="font-size:24px;color:#ffd93d;margin-bottom:2px">✿</span><div class="stem" style="height:20px"></div></div>
+            <span style="font-size:18px">🌱</span>
+          </div>
+        </div>
+        <div class="ground"></div>
+        <div class="cap">✿ nibble daily to nourish ✿</div>
+      </div>
+    </div>
+  </section>
 
-  <h2>your data</h2>
-  <p>Nibble has no server. It reads the headers and a short snippet of your <em>starred</em> emails (read-only, never the full message) and keeps everything in your browser. Nothing is sent to me or anyone else. Read the full <a href="/nibble/privacy/">privacy policy</a>.</p>
+  <section class="themes">
+    <div class="mini" aria-hidden="true" title="cherry blossom" style="top:119px;left:140px;transform:rotate(-8deg)"><div class="h" style="background:#FFB6C1"></div><div class="b" style="background:#FFF8FA"><i style="background:#C4527A"></i><i style="background:#C4527A"></i><i style="background:#C4527A"></i></div></div>
+    <div class="mini" aria-hidden="true" title="matcha" style="top:130px;right:176px;transform:rotate(10deg)"><div class="h" style="background:#a8c5a0"></div><div class="b" style="background:#f4faf6"><i style="background:#3d6b4f"></i><i style="background:#3d6b4f"></i><i style="background:#3d6b4f"></i></div></div>
+    <div class="mini" aria-hidden="true" title="ocean drift" style="top:391px;left:108px;transform:rotate(6deg)"><div class="h" style="background:#83c5be"></div><div class="b" style="background:#edf6f9"><i style="background:#006d77"></i><i style="background:#006d77"></i><i style="background:#006d77"></i></div></div>
+    <div class="mini" aria-hidden="true" title="ink &amp; rose" style="top:401px;right:121px;transform:rotate(-7deg)"><div class="h" style="background:#8b3a56"></div><div class="b" style="background:#1c1014"><i style="background:#e8759a"></i><i style="background:#e8759a"></i><i style="background:#e8759a"></i></div></div>
+    <div class="mini" aria-hidden="true" title="oat latte" style="top:630px;left:298px;transform:rotate(9deg)"><div class="h" style="background:#e8d6c3"></div><div class="b" style="background:#fbf7f1"><i style="background:#8b5e3c"></i><i style="background:#8b5e3c"></i><i style="background:#8b5e3c"></i></div></div>
+    <div class="mini" aria-hidden="true" title="midnight mono" style="top:609px;right:301px;transform:rotate(-11deg)"><div class="h" style="background:#232327"></div><div class="b" style="background:#0d0d0f"><i style="background:#6e6e73"></i><i style="background:#6e6e73"></i><i style="background:#6e6e73"></i></div></div>
+
+    <div class="eyebrow">· make it yours ·</div>
+    <h2>six vibes. pick one.</h2>
+    <p class="sub">change the theme based on your vibe</p>
+    <div class="list">
+      <div><span class="sw"><i style="background:#FFF8FA"></i><i style="background:#FFB6C1"></i><i style="background:#C4527A"></i></span><span class="nm">cherry blossom</span><span class="ck">✓</span></div>
+      <div><span class="sw"><i style="background:#f4faf6"></i><i style="background:#a8c5a0"></i><i style="background:#3d6b4f"></i></span><span class="nm">matcha</span></div>
+      <div><span class="sw"><i style="background:#edf6f9"></i><i style="background:#83c5be"></i><i style="background:#006d77"></i></span><span class="nm">ocean drift</span></div>
+      <div><span class="sw"><i style="background:#1c1014"></i><i style="background:#8b3a56"></i><i style="background:#e8759a"></i></span><span class="nm">ink &amp; rose</span></div>
+      <div><span class="sw"><i style="background:#fbf7f1"></i><i style="background:#e8d6c3"></i><i style="background:#8b5e3c"></i></span><span class="nm">oat latte</span></div>
+      <div><span class="sw"><i style="background:#0d0d0f"></i><i style="background:#232327"></i><i style="background:#6e6e73"></i></span><span class="nm">midnight mono</span></div>
+    </div>
+    <div class="vibe">✦ set the vibe ✦</div>
+  </section>
+
+  <section class="cta">
+    <span class="deco" aria-hidden="true" style="top:30%;left:12%;font-size:20px">♥</span>
+    <span class="deco" aria-hidden="true" style="top:20%;left:23%;font-size:16px">✦</span>
+    <span class="deco" aria-hidden="true" style="top:25%;right:24%;font-size:18px">♥</span>
+    <span class="deco" aria-hidden="true" style="bottom:20%;left:20%;font-size:14px">☆</span>
+    <span class="deco" aria-hidden="true" style="bottom:30%;right:14%;font-size:20px">♥</span>
+    <span class="deco" aria-hidden="true" style="bottom:35%;right:26%;font-size:17px">✧</span>
+    <img src="/nibble/mascot-heart.png" alt="Nibble cookie mascot holding a heart">
+    <h2>one nibble.<br>one read.<br>every day.</h2>
+    <p>clear your reading backlog one nibble a day</p>
+    <a class="btn white" href="#">Add to Chrome →</a>
+  </section>
 
   <footer>
-    <a href="/">nechalmaggon.com</a> · <a href="/nibble/privacy/">privacy policy</a> · <a href="/nibble/terms/">terms</a> · <a href="/nibble/support/">support</a>
+    <div class="brand">🍪 nibble.</div>
+    <div class="copy">© 2025 Nibble. One article at a time. · <a href="/" style="text-decoration:none">nechalmaggon.com</a></div>
+    <nav>
+      <a href="/nibble/privacy/">privacy policy</a>
+      <a href="/nibble/terms/">terms of service</a>
+      <a href="/nibble/support/">support</a>
+    </nav>
   </footer>
 </main>
 </body>
