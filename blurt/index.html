@@ -10,6 +10,7 @@ body{margin:0;background:#F4F2ED;-webkit-font-smoothing:antialiased}
 a{color:#387C58;text-decoration:none}
 a:hover{color:#CF5F35}
 @keyframes blurtPulse{0%,100%{opacity:1}50%{opacity:.25}}
+@keyframes blurtBlink{0%,100%{opacity:1}50%{opacity:0}}
 @keyframes blurtBars{0%,100%{transform:scaleY(.35)}50%{transform:scaleY(1)}}
 </style>
 </head>
@@ -100,133 +101,50 @@ a:hover{color:#CF5F35}
   </section>
 
   <section id="sorts" style="background:#EDEAE3;border-top:1px solid rgba(26,25,23,.09)">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 96px 48px; padding-left: 48px; padding-right: 48px">
-      <div style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:14px;font-weight:500;letter-spacing:2px;color:#CF5F35;margin-bottom:18px">00:03 · SO WHAT HAPPENS TO IT</div>
-      <h2 style="margin:0 0 14px;font-weight:500;font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:42px;line-height:1.1;letter-spacing:-.8px;max-width:700px">One ramble in. Three kinds of thing out.</h2>
-      <p style="margin:0 0 52px;font-size:17px;line-height:1.65;color:rgba(26,25,23,.66);max-width:600px;text-wrap:pretty">You simply talk – blurt out whatever comes to your mind, and Blurt will understand, breakdown and organise all your thoughts in an actionable format.&nbsp;</p>
+    <div style="max-width:1200px;margin:0 auto;padding:96px 48px 40px">
+      <div style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:14px;font-weight:500;letter-spacing:2px;color:#CF5F35;margin-bottom:18px">00:03 · OUT, THEN BACK</div>
+      <h2 style="margin:0 0 20px;font-weight:500;font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:42px;line-height:1.1;letter-spacing:-.8px;max-width:760px;text-wrap:balance">Blurt it all out. Pull it back together.</h2>
+      <p style="margin:0 0 14px;font-size:17px;line-height:1.65;color:rgba(26,25,23,.66);max-width:600px;text-wrap:pretty">Nine rambles before lunch, zero minutes spent organizing them. Each one gets tagged the moment you say it. Come back whenever, type roughly what you remember, and it's already there.</p>
+      <p style="margin:0 0 56px;font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:15px;line-height:1.6;color:rgba(26,25,23,.45)">You never filed a thing. It doesn't feel that way when you search.</p>
 
-      <div style="display:grid;grid-template-columns:104px minmax(0,1fr);gap:14px 28px;align-items:start">
-
-        <div style="padding-top:2px;font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.6px;color:rgba(26,25,23,.42);line-height:1.5">01<br>TALK</div>
-        <div style="background:#1A1917;border-radius:16px;padding:26px 30px 28px;display:flex;flex-direction:column;gap:16px">
-          <div style="display:flex;align-items:center;justify-content:space-between">
-            <span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.8px;color:rgba(244,242,237,.5)">ONE RECORDING · 00:40 · UNEDITED</span>
-            <span style="display:flex;align-items:center;gap:7px;font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.4px;color:#CF5F35"><span style="width:7px;height:7px;border-radius:50%;background:#CF5F35;animation:blurtPulse 1.8s ease-in-out infinite"></span>REC</span>
-          </div>
-          <p style="margin:0;font-size:17px;line-height:1.8;color:rgba(244,242,237,.82);text-wrap:pretty">"okay so — no wait, actually, <span style="color:#F4F2ED;border-bottom:2px solid rgba(56,124,88,.85)">the release notes thing, I keep forgetting</span>, I need to write those up before Friday — and <span style="color:#F4F2ED;border-bottom:2px solid rgba(56,124,88,.85)">I still owe Priya a reply, ugh</span>, and also, unrelated, <span style="color:#F4F2ED;border-bottom:2px solid rgba(207,95,53,.85)">I had a thought about the onboarding flow, what if instead of—</span> <span style="color:#F4F2ED;border-bottom:2px solid rgba(244,242,237,.4)">oh and the place on Grant St does the good coffee</span>"</p>
-          <div style="display:flex;align-items:center;justify-content:flex-end;gap:3px;height:28px"><span style="width:2px;flex:none;border-radius:1px;background:rgba(244,242,237,.42);height:38%;transform-origin:center;animation:blurtBars 1.15s ease-in-out 0.00s infinite"></span><span style="width:2px;flex:none;border-radius:1px;background:rgba(244,242,237,.42);height:62%;transform-origin:center;animation:blurtBars 1.28s ease-in-out 0.04s infinite"></span><span style="width:2px;flex:none;border-radius:1px;background:rgba(244,242,237,.42);height:88%;transform-origin:center;animation:blurtBars 1.41s ease-in-out 0.09s infinite"></span><span style="width:2px;flex:none;border-radius:1px;background:rgba(244,242,237,.42);height:54%;transform-origin:center;animation:blurtBars 1.54s ease-in-out 0.14s infinite"></span><span style="width:2px;flex:none;border-radius:1px;background:rgba(244,242,237,.42);height:72%;transform-origin:center;animation:blurtBars 1.67s ease-in-out 0.18s infinite"></span><span style="width:2px;flex:none;border-radius:1px;background:rgba(244,242,237,.42);height:100%;transform-origin:center;animation:blurtBars 1.80s ease-in-out 0.22s infinite"></span><span style="width:2px;flex:none;border-radius:1px;background:rgba(244,242,237,.42);height:46%;transform-origin:center;animation:blurtBars 1.93s ease-in-out 0.27s infinite"></span><span style="width:2px;flex:none;border-radius:1px;background:rgba(244,242,237,.42);height:80%;transform-origin:center;animation:blurtBars 1.15s ease-in-out 0.32s infinite"></span><span style="width:2px;flex:none;border-radius:1px;background:rgba(244,242,237,.42);height:58%;transform-origin:center;animation:blurtBars 1.28s ease-in-out 0.36s infinite"></span><span style="width:2px;flex:none;border-radius:1px;background:rgba(244,242,237,.42);height:94%;transform-origin:center;animation:blurtBars 1.41s ease-in-out 0.40s infinite"></span><span style="width:2px;flex:none;border-radius:1px;background:rgba(244,242,237,.42);height:42%;transform-origin:center;animation:blurtBars 1.54s ease-in-out 0.45s infinite"></span><span style="width:2px;flex:none;border-radius:1px;background:rgba(244,242,237,.42);height:68%;transform-origin:center;animation:blurtBars 1.67s ease-in-out 0.49s infinite"></span><span style="width:2px;flex:none;border-radius:1px;background:rgba(244,242,237,.42);height:86%;transform-origin:center;animation:blurtBars 1.80s ease-in-out 0.54s infinite"></span><span style="width:2px;flex:none;border-radius:1px;background:rgba(244,242,237,.42);height:50%;transform-origin:center;animation:blurtBars 1.93s ease-in-out 0.58s infinite"></span><span style="width:2px;flex:none;border-radius:1px;background:rgba(244,242,237,.42);height:76%;transform-origin:center;animation:blurtBars 1.15s ease-in-out 0.63s infinite"></span><span style="width:2px;flex:none;border-radius:1px;background:rgba(244,242,237,.42);height:64%;transform-origin:center;animation:blurtBars 1.28s ease-in-out 0.67s infinite"></span><span style="width:2px;flex:none;border-radius:1px;background:rgba(244,242,237,.42);height:90%;transform-origin:center;animation:blurtBars 1.41s ease-in-out 0.72s infinite"></span><span style="width:2px;flex:none;border-radius:1px;background:rgba(244,242,237,.42);height:48%;transform-origin:center;animation:blurtBars 1.54s ease-in-out 0.77s infinite"></span><span style="width:2px;flex:none;border-radius:1px;background:rgba(244,242,237,.42);height:70%;transform-origin:center;animation:blurtBars 1.67s ease-in-out 0.81s infinite"></span><span style="width:2px;flex:none;border-radius:1px;background:rgba(244,242,237,.42);height:56%;transform-origin:center;animation:blurtBars 1.80s ease-in-out 0.85s infinite"></span></div>
-        </div>
-
-        <div></div>
-        <svg viewBox="0 0 900 40" preserveAspectRatio="none" style="display:block;width:100%;height:40px" fill="none">
-          <path d="M450 0 L450 40" stroke="rgba(26,25,23,.3)" stroke-width="1.5" stroke-dasharray="4 5"></path>
-        </svg>
-
-        <div style="padding-top:2px;font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.6px;color:rgba(26,25,23,.42);line-height:1.5">02<br>SPLIT</div>
-        <div style="display:flex;flex-direction:column;gap:12px">
-          <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px">
-            <p style="margin:0;font-size:16px;line-height:1.5;color:rgba(26,25,23,.72);max-width:560px;text-wrap:pretty">You didn't sort it as you spoke. You didn't have to. <span style="color:#1A1917;font-weight:590">One recording, four separate notes</span> — pulled apart for you.</p>
-            <span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.6px;color:#CF5F35;flex:none">4 NOTES FOUND</span>
-          </div>
-          <div style="display:flex;gap:3px;height:38px">
-            <div style="flex:28;border-radius:7px 3px 3px 7px;background:rgba(56,124,88,.16);border:1px solid rgba(56,124,88,.4);display:flex;align-items:center;padding:0 12px;overflow:hidden"><span style="font-size:13px;color:#2E6849;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">write up release notes</span></div>
-            <div style="flex:22;border-radius:3px;background:rgba(56,124,88,.16);border:1px solid rgba(56,124,88,.4);display:flex;align-items:center;padding:0 12px;overflow:hidden"><span style="font-size:13px;color:#2E6849;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">reply to Priya</span></div>
-            <div style="flex:30;border-radius:3px;background:rgba(207,95,53,.16);border:1px solid rgba(207,95,53,.4);display:flex;align-items:center;padding:0 12px;overflow:hidden"><span style="font-size:13px;color:#B24F28;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">onboarding flow thought</span></div>
-            <div style="flex:20;border-radius:3px 7px 7px 3px;background:rgba(26,25,23,.06);border:1px solid rgba(26,25,23,.22);display:flex;align-items:center;padding:0 12px;overflow:hidden"><span style="font-size:13px;color:rgba(26,25,23,.6);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Grant St coffee</span></div>
-          </div>
-        </div>
-
-        <div></div>
-        <svg viewBox="0 0 900 104" preserveAspectRatio="none" style="display:block;width:100%;height:104px" fill="none">
-          <path d="M126 0 C126 52 150 52 150 104" stroke="rgba(56,124,88,.5)" stroke-width="1.5" stroke-dasharray="4 5"></path>
-          <path d="M351 0 C351 52 150 52 150 104" stroke="rgba(56,124,88,.5)" stroke-width="1.5" stroke-dasharray="4 5"></path>
-          <path d="M585 0 C585 52 450 52 450 104" stroke="rgba(207,95,53,.5)" stroke-width="1.5" stroke-dasharray="4 5"></path>
-          <path d="M810 0 C810 52 750 52 750 104" stroke="rgba(26,25,23,.3)" stroke-width="1.5" stroke-dasharray="4 5"></path>
-        </svg>
-
-        <div style="padding-top:2px;font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.6px;color:rgba(26,25,23,.42);line-height:1.5">03<br>SORT</div>
-        <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
-          <div style="display:flex;align-items:center;gap:10px;padding:0 0 12px;border-bottom:1.5px solid rgba(56,124,88,.55)">
-            <span style="width:8px;height:8px;border-radius:50%;background:#387C58;flex:none"></span>
-            <span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:17px;letter-spacing:.4px;color:#2E6849">To-Do</span>
-          </div>
-          <div style="display:flex;align-items:center;gap:10px;padding:0 0 12px;border-bottom:1.5px solid rgba(207,95,53,.55)">
-            <span style="width:8px;height:8px;border-radius:50%;background:#CF5F35;flex:none"></span>
-            <span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:17px;letter-spacing:.4px;color:#B24F28">Idea</span>
-          </div>
-          <div style="display:flex;align-items:center;gap:10px;padding:0 0 12px;border-bottom:1.5px solid rgba(26,25,23,.3)">
-            <span style="width:8px;height:8px;border-radius:50%;background:rgba(26,25,23,.5);flex:none"></span>
-            <span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:17px;letter-spacing:.4px;color:rgba(26,25,23,.65)">General</span>
-          </div>
-        </div>
-
-        <div></div>
-        <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
-          <div style="display:flex;justify-content:center"><svg viewBox="0 0 40 68" style="display:block;width:40px;height:68px" fill="none"><path d="M20 0 L20 56" stroke="rgba(56,124,88,.5)" stroke-width="1.5" stroke-dasharray="4 5"></path><path d="M14 50 L20 58 L26 50" stroke="rgba(56,124,88,.75)" stroke-width="1.5"></path></svg></div>
-          <div style="display:flex;justify-content:center"><svg viewBox="0 0 40 68" style="display:block;width:40px;height:68px" fill="none"><path d="M20 0 L20 56" stroke="rgba(207,95,53,.5)" stroke-width="1.5" stroke-dasharray="4 5"></path><path d="M14 50 L20 58 L26 50" stroke="rgba(207,95,53,.75)" stroke-width="1.5"></path></svg></div>
-          <div style="display:flex;justify-content:center"><svg viewBox="0 0 40 68" style="display:block;width:40px;height:68px" fill="none"><path d="M20 0 L20 56" stroke="rgba(26,25,23,.28)" stroke-width="1.5" stroke-dasharray="4 5"></path><path d="M14 50 L20 58 L26 50" stroke="rgba(26,25,23,.4)" stroke-width="1.5"></path></svg></div>
-        </div>
-
-        <div style="padding-top:2px;font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.6px;color:rgba(26,25,23,.42);line-height:1.5">04<br>TRACK</div>
-        <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:stretch">
-          <div style="background:#F8F7F3;border:1px solid rgba(26,25,23,.09);border-radius:14px;padding:20px 22px;display:flex;flex-direction:column;gap:14px;box-shadow:0 1px 2px rgba(26,25,23,.04)">
-            <span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:11px;letter-spacing:1.8px;color:rgba(26,25,23,.42)">TO-DO LIST</span>
-            <div style="display:flex;gap:11px;align-items:flex-start">
-              <span style="width:18px;height:18px;border-radius:5px;border:1.5px solid #387C58;flex:none;margin-top:2px"></span>
-              <span style="font-size:16px;font-weight:590;line-height:1.35">Write up release notes</span>
-            </div>
-            <div style="display:flex;gap:11px;align-items:flex-start">
-              <span style="width:18px;height:18px;border-radius:5px;border:1.5px solid #387C58;flex:none;margin-top:2px"></span>
-              <span style="font-size:16px;font-weight:590;line-height:1.35">Reply to Priya</span>
-            </div>
-            <span style="align-self:flex-start;font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.2px;color:rgba(26,25,23,.45);margin-top:auto">2 FROM ONE RECORDING · DUE FRIDAY</span>
-          </div>
-          <div style="background:#F8F7F3;border:1px solid rgba(26,25,23,.09);border-radius:14px;padding:20px 22px;display:flex;flex-direction:column;gap:12px;box-shadow:0 1px 2px rgba(26,25,23,.04)">
-            <span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:11px;letter-spacing:1.8px;color:rgba(26,25,23,.42)">IDEA CARD</span>
-            <span style="font-size:16px;font-weight:590;line-height:1.35">Onboarding flow rethink</span>
-            <p style="margin:0;font-size:14px;line-height:1.55;color:rgba(26,25,23,.6)">What if the first run skipped setup entirely and just let people talk?</p>
-            <span style="align-self:flex-start;font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.2px;color:rgba(26,25,23,.45);margin-top:auto">SUMMARISED FOR YOU</span>
-          </div>
-          <div style="background:#F8F7F3;border:1px solid rgba(26,25,23,.09);border-radius:14px;padding:20px 22px;display:flex;flex-direction:column;gap:12px;box-shadow:0 1px 2px rgba(26,25,23,.04)">
-            <span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:11px;letter-spacing:1.8px;color:rgba(26,25,23,.42)">NOTE</span>
-            <span style="font-size:16px;font-weight:590;line-height:1.35">Good coffee on Grant St</span>
-            <p style="margin:0;font-size:14px;line-height:1.55;color:rgba(26,25,23,.6)">Findable in three weeks. Not "Voice Memo 47."</p>
-            <span style="align-self:flex-start;font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.2px;color:rgba(26,25,23,.45);margin-top:auto">FILED, SEARCHABLE</span>
-          </div>
-        </div>
-
-        <div></div>
-        <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
-          <div style="display:flex;justify-content:center"><svg viewBox="0 0 40 68" style="display:block;width:40px;height:68px" fill="none"><path d="M20 0 L20 56" stroke="rgba(56,124,88,.5)" stroke-width="1.5" stroke-dasharray="4 5"></path><path d="M14 50 L20 58 L26 50" stroke="rgba(56,124,88,.75)" stroke-width="1.5"></path></svg></div>
-          <div style="display:flex;justify-content:center"><svg viewBox="0 0 40 68" style="display:block;width:40px;height:68px" fill="none"><path d="M20 0 L20 56" stroke="rgba(207,95,53,.5)" stroke-width="1.5" stroke-dasharray="4 5"></path><path d="M14 50 L20 58 L26 50" stroke="rgba(207,95,53,.75)" stroke-width="1.5"></path></svg></div>
-          <div></div>
-        </div>
-
-        <div style="padding-top:2px;font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.6px;color:rgba(26,25,23,.42);line-height:1.5">05<br>ACT</div>
-        <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:stretch">
-          <div style="display:flex;flex-direction:column;gap:9px;padding-top:2px">
-            <span style="display:flex;align-items:center;gap:8px;font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:11px;letter-spacing:1.8px;color:#2E6849"><span style="width: 6px; height: 6px; border-radius: 50%; background: rgb(56, 124, 88); animation: 2s ease-in-out 0s infinite normal none running blurtPulse;"></span>AGENT · SETTING REMINDER</span>
-            <span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:20px;font-weight:500;line-height:1.3;letter-spacing:-.2px">Reminder set</span>
-            <p style="margin:0;font-size:15px;line-height:1.6;color:rgba(26,25,23,.62);text-wrap:pretty">Blurt nudges you Thursday, before Friday turns into a problem. Drafting the notes for you is next on the list.</p>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:9px;padding-top:2px">
-            <span style="display:flex;align-items:center;gap:8px;font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:11px;letter-spacing:1.8px;color:#B24F28"><span style="width:6px;height:6px;border-radius:50%;background:#CF5F35;animation:blurtPulse 2s ease-in-out infinite"></span>AGENT · RESEARCHING</span>
-            <span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:20px;font-weight:500;line-height:1.3;letter-spacing:-.2px">Research, then a report</span>
-            <p style="margin:0;font-size:15px;line-height:1.6;color:rgba(26,25,23,.62);text-wrap:pretty">It reads around the idea and comes back with something real instead of a bullet point.</p>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:9px;padding-top:2px">
-            <span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:11px;letter-spacing:1.8px;color:rgba(26,25,23,.4)">NO AGENT</span>
-            <span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:20px;font-weight:500;line-height:1.3;letter-spacing:-.2px;color:rgba(26,25,23,.75)">Nothing. On purpose.</span>
-            <p style="margin:0;font-size:15px;line-height:1.6;color:rgba(26,25,23,.55);text-wrap:pretty">Not every thought needs doing. Some just need somewhere to simmer.</p>
-          </div>
-        </div>
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding-bottom:14px;border-bottom:1px solid rgba(26,25,23,.16);margin-bottom:24px">
+        <span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.8px;color:rgba(26,25,23,.42)">ONE ORDINARY THURSDAY · MID-SPRINT</span>
+        <span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.8px;color:#CF5F35">9 CAPTURES · 0 MIN ORGANIZING</span>
       </div>
 
-      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:18px;margin-top:56px;padding-top:34px;border-top:1px solid rgba(26,25,23,.14)">
-        <p style="margin:0;font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:30px;font-weight:500;line-height:1.28;letter-spacing:-.5px;color:#2E6849;max-width:620px;margin-left:auto;text-align:right;text-wrap:pretty">Most apps would've stopped at a tidier version of that transcript. Blurt keeps going.</p>
-        <span style="display:flex;align-items:center;gap:12px">
-          <span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.6px;color:rgba(26,25,23,.45)">SOON</span>
-          <span style="font-size:15px;color:rgba(26,25,23,.6)">More widget types, more agents. This part's still growing.</span>
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr))">
+        <div style="padding:0 28px 0 0px;display:flex;flex-direction:column;gap:22px"><span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.8px;color:rgba(26,25,23,.4)">9 – 11 AM</span><div style="display:flex;align-items:flex-start;gap:10px;padding:11px 14px;border-radius:12px;background:rgba(56,124,88,.14);border:1px solid rgba(56,124,88,.4);margin-right:14px"><span style="width:7px;height:7px;border-radius:50%;background:#387C58;flex:none;margin-top:9px"></span><span style="flex:1;font-size:15px;line-height:1.35;color:#2E6849">nudge legal on the DPA</span><span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:.6px;color:rgba(26,25,23,.38);flex:none;margin-top:2px">9:12</span></div><div style="display:flex;align-items:flex-start;gap:10px;padding:11px 14px;border-radius:12px;background:rgba(26,25,23,.05);border:1px solid rgba(26,25,23,.16);"><span style="width:7px;height:7px;border-radius:50%;background:rgba(26,25,23,.45);flex:none;margin-top:9px"></span><span style="flex:1;font-size:15px;line-height:1.35;color:rgba(26,25,23,.62)">3 of 5 skipped the empty state</span><span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:.6px;color:rgba(26,25,23,.38);flex:none;margin-top:2px">9:48</span></div><div style="display:flex;align-items:flex-start;gap:10px;padding:11px 14px;border-radius:12px;background:transparent;border:1px dashed rgba(26,25,23,.28);"><span style="width:7px;height:7px;border-radius:50%;background:rgba(26,25,23,.35);flex:none;margin-top:9px"></span><span style="flex:1;font-size:15px;line-height:1.35;color:rgba(26,25,23,.6)">why is onboarding 6 steps?</span><span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:.6px;color:rgba(26,25,23,.38);flex:none;margin-top:2px">10:30</span></div></div>
+        <div style="border-left:1px solid rgba(26,25,23,.12);padding:0 28px 0 28px;display:flex;flex-direction:column;gap:22px"><span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.8px;color:rgba(26,25,23,.4)">11 AM – 2 PM</span><div style="display:flex;align-items:flex-start;gap:10px;padding:11px 14px;border-radius:12px;background:rgba(207,95,53,.12);border:1px solid rgba(207,95,53,.42);"><span style="width:7px;height:7px;border-radius:50%;background:#CF5F35;flex:none;margin-top:9px"></span><span style="flex:1;font-size:15px;line-height:1.35;color:#B24F28">bulk import, spec it out</span><span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:.6px;color:rgba(26,25,23,.38);flex:none;margin-top:2px">11:05</span></div><div style="display:flex;align-items:flex-start;gap:10px;padding:11px 14px;border-radius:12px;background:rgba(26,25,23,.05);border:1px solid rgba(26,25,23,.16);"><span style="width:7px;height:7px;border-radius:50%;background:rgba(26,25,23,.45);flex:none;margin-top:9px"></span><span style="flex:1;font-size:15px;line-height:1.35;color:rgba(26,25,23,.62)">Sam: pricing confuses trials</span><span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:.6px;color:rgba(26,25,23,.38);flex:none;margin-top:2px">11:52</span></div><div style="display:flex;align-items:flex-start;gap:10px;padding:11px 14px;border-radius:12px;background:transparent;border:1px dashed rgba(26,25,23,.28);"><span style="width:7px;height:7px;border-radius:50%;background:rgba(26,25,23,.35);flex:none;margin-top:9px"></span><span style="flex:1;font-size:15px;line-height:1.35;color:rgba(26,25,23,.6)">do we ship search first?</span><span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:.6px;color:rgba(26,25,23,.38);flex:none;margin-top:2px">1:20</span></div></div>
+        <div style="border-left:1px solid rgba(26,25,23,.12);padding:0 0px 0 28px;display:flex;flex-direction:column;gap:22px"><span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.8px;color:rgba(26,25,23,.4)">2 – 6 PM</span><div style="display:flex;align-items:flex-start;gap:10px;padding:11px 14px;border-radius:12px;background:rgba(56,124,88,.14);border:1px solid rgba(56,124,88,.4);margin-right:14px"><span style="width:7px;height:7px;border-radius:50%;background:#387C58;flex:none;margin-top:9px"></span><span style="flex:1;font-size:15px;line-height:1.35;color:#2E6849">design: token handoff</span><span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:.6px;color:rgba(26,25,23,.38);flex:none;margin-top:2px">2:37</span></div><div style="display:flex;align-items:flex-start;gap:10px;padding:11px 14px;border-radius:12px;background:rgba(207,95,53,.12);border:1px solid rgba(207,95,53,.42);margin:0 14px 0 18px"><span style="width:7px;height:7px;border-radius:50%;background:#CF5F35;flex:none;margin-top:9px"></span><span style="flex:1;font-size:15px;line-height:1.35;color:#B24F28">weekly digest email</span><span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:.6px;color:rgba(26,25,23,.38);flex:none;margin-top:2px">3:58</span></div><div style="display:flex;align-items:flex-start;gap:10px;padding:11px 14px;border-radius:12px;background:rgba(56,124,88,.14);border:1px solid rgba(56,124,88,.4);"><span style="width:7px;height:7px;border-radius:50%;background:#387C58;flex:none;margin-top:9px"></span><span style="flex:1;font-size:15px;line-height:1.35;color:#2E6849">pull pre-launch retention</span><span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:.6px;color:rgba(26,25,23,.38);flex:none;margin-top:2px">5:40</span></div></div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);margin-top:30px;padding-top:12px;border-top:1px solid rgba(26,25,23,.16);font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.8px;color:rgba(26,25,23,.4)">
+        <span>STANDUP</span><span style="text-align:center">LUNCH</span><span style="text-align:right">END OF DAY</span>
+      </div>
+      <svg viewBox="0 0 1232 150" preserveAspectRatio="none" style="display:block;width:100%;height:110px;margin-top:-4px" fill="none"><path d="M45 0 C45 110 355 150 615 150" stroke="rgba(26,25,23,.3)" stroke-width="1.5" stroke-dasharray="2 5" stroke-linecap="round"></path><path d="M267 0 C267 110 355 150 615 150" stroke="rgba(26,25,23,.3)" stroke-width="1.5" stroke-dasharray="2 5" stroke-linecap="round"></path><path d="M524 0 C524 80 615 70 615 150" stroke="rgba(207,95,53,.5)" stroke-width="1.5" stroke-dasharray="2 5" stroke-linecap="round"></path><path d="M781 0 C781 110 875 150 615 150" stroke="rgba(26,25,23,.3)" stroke-width="1.5" stroke-dasharray="2 5" stroke-linecap="round"></path><path d="M1004 0 C1004 110 875 150 615 150" stroke="rgba(26,25,23,.3)" stroke-width="1.5" stroke-dasharray="2 5" stroke-linecap="round"></path></svg>
+
+      <div style="background:#1A1917;border-radius:20px;padding:30px 32px 28px;display:flex;flex-direction:column;gap:18px">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:16px">
+          <span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.8px;color:rgba(244,242,237,.5)">THREE WEEKS LATER · YOU HALF REMEMBER IT</span>
+          <span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.8px;color:#7FB895">FOUND IN 0.2s</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:6px;padding:20px 22px;border-radius:12px;background:#2C2B29;border:1px solid rgba(244,242,237,.2);font-size:22px;color:#F4F2ED">
+          <span>that empty state thing</span>
+          <span style="width:2px;height:24px;background:#CF5F35;margin-left:6px;animation:blurtBlink 1.1s step-end infinite"></span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <div style="display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:12px;background:#1F2A24;border:1px solid rgba(56,124,88,.55)"><span style="width:8px;height:8px;border-radius:50%;background:#7FB895;flex:none"></span><span style="flex:1;font-size:17px;color:#F4F2ED">3 of 5 skipped the empty state</span><span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.4px;color:rgba(244,242,237,.62)">OBSERVATION · THU 9:48</span></div>
+          <div style="display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:12px;"><span style="width:8px;height:8px;border-radius:50%;background:rgba(244,242,237,.3);flex:none"></span><span style="flex:1;font-size:17px;color:rgba(244,242,237,.42)">Why is onboarding 6 steps?</span><span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.4px;color:rgba(244,242,237,.22)">QUESTION · THU 10:30</span></div>
+          <div style="display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:12px;"><span style="width:8px;height:8px;border-radius:50%;background:rgba(244,242,237,.3);flex:none"></span><span style="flex:1;font-size:17px;color:rgba(244,242,237,.38)">Weekly digest email</span><span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.4px;color:rgba(244,242,237,.2)">IDEA · THU 15:58</span></div>
+        </div>
+        <span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.8px;color:rgba(244,242,237,.5)">MATCHED ON WHAT YOU MEANT, NOT WHAT YOU TYPED</span>
+      </div>
+
+      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:16px;margin-top:56px;padding-top:34px;border-top:1px solid rgba(26,25,23,.14)">
+        <p style="margin:0;font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:30px;font-weight:500;line-height:1.28;letter-spacing:-.5px;color:#2E6849;max-width:660px;text-align:right;text-wrap:pretty">Capturing a thought should cost you nothing. Finding it again shouldn't cost you either.</p>
+        <span style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;justify-content:flex-end">
+          <span style="font-family:'American Typewriter','Rockwell','Courier New',serif;font-size:12px;letter-spacing:1.6px;color:rgba(26,25,23,.45)">NO FOLDERS</span>
+          <span style="font-size:15px;color:rgba(26,25,23,.6)">No tags to pick, no inbox to clear. Just talk, then ask.</span>
         </span>
       </div>
     </div>
