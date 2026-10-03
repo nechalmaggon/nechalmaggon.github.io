@@ -140,7 +140,7 @@ a:focus-visible { outline: 2px solid var(--plum); outline-offset: 3px; }
   font-size: 13px; color: var(--muted); line-height: 1.5;
 }
 .feature-body { flex: 1; padding: 40px; display: flex; flex-direction: column; gap: 16px; }
-.feature-body h3 { margin: 0; font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 28px; line-height: 1.2; }
+.feature-body h3 { margin: 0; font-family: var(--serif); font-weight: 500; font-size: 28px; line-height: 1.2; }
 .feature-body p { margin: 0; font-size: 14px; color: var(--ink-2); line-height: 1.7; }
 .feature-body ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
 .feature-body li { position: relative; padding-left: 18px; font-size: 14px; line-height: 1.6; }
@@ -215,7 +215,7 @@ a:focus-visible { outline: 2px solid var(--plum); outline-offset: 3px; }
 }
 .delight > .fig { position: absolute; right: 0; top: 488px; text-align: right; }
 .delight-intro { width: 480px; display: flex; flex-direction: column; gap: 18px; }
-.delight-intro h2 { margin: 0; font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 38px; line-height: 1.15; color: var(--plum); }
+.delight-intro h2 { margin: 0; font-family: var(--serif); font-weight: 500; font-size: 38px; line-height: 1.15; color: var(--plum); }
 .delight-intro .rule { width: 48px; height: 2px; background: var(--plum); }
 .delight-intro p { margin: 0; font-size: 15px; color: var(--ink-2); line-height: 1.7; }
 .rules { width: 512px; display: flex; flex-direction: column; gap: 22px; }
