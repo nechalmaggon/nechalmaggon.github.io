@@ -184,7 +184,7 @@ a:focus-visible { outline: 2px solid var(--plum); outline-offset: 3px; }
 .note {
   position: relative;
   z-index: 2;
-  margin: -14px 0 0 28px;
+  margin: 20px 0 0 28px;
   width: 232px;
   background: #FEFCF8;
   border: 1px solid #E6DFD2;
