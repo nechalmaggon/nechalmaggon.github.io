@@ -13,13 +13,20 @@ Every page is a folder containing an `index.html`. The folder path is the URL pa
 | `/nibble/privacy/` | `nibble/privacy/index.html` |
 | `/nibble/terms/` | `nibble/terms/index.html` |
 | `/nibble/support/` | `nibble/support/index.html` |
+| `/blurt/` | `blurt/index.html` |
+| `/drift/`, `/reading/`, `/art/`, `/ideas/` | placeholder pages (`<slug>/index.html`) |
+| `/resume.pdf` | `resume.pdf` |
 
 ## Repo structure
 
 ```
 .
-├── index.html          # Home / portfolio page (currently a placeholder)
-├── style.css           # Single shared stylesheet for every page
+├── index.html          # Home / portfolio page
+├── home.css            # Styles for the home page and its placeholder pages
+├── images/             # Home page assets (desk drawing, project screenshots, wire grid)
+├── resume.pdf          # Linked from the nav and footer
+├── drift/ reading/ art/ ideas/   # "Coming soon" placeholder pages (use home.css)
+├── style.css           # Stylesheet for the Nibble pages
 ├── fonts/              # Self-hosted Press Start 2P (woff2) + OFL license
 ├── CNAME               # Custom domain (nechalmaggon.com), required by GitHub Pages
 ├── .nojekyll           # Tells GitHub Pages to skip Jekyll processing
