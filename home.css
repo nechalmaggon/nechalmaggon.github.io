@@ -22,6 +22,7 @@ body {
   background-color: var(--paper);
   background-image: radial-gradient(circle, rgba(43,38,32,0.3) 0.8px, transparent 1.15px);
   background-size: 32px 32px;
+  background-position: calc(50% + 16px) 0; /* dots land on 16px offsets from the page's left edge, so the crosses sit on dots at any width */
   color: var(--ink);
   font-family: var(--sans);
   -webkit-font-smoothing: antialiased;
@@ -120,39 +121,39 @@ a:focus-visible { outline: 2px solid var(--plum); outline-offset: 3px; }
 .section-head h2 { margin: 0; font-family: var(--serif); font-weight: 600; font-size: 30px; }
 .section-head p { margin: 0; font-size: 15px; color: var(--ink-2); line-height: 1.7; max-width: 680px; }
 #work { margin-top: 128px; height: 160px; }
-#fun { margin-top: 96px; height: 128px; }
+#fun { margin-top: 95px; height: 128px; }
 
 /* ---- day job ---- */
 
-.feature {
-  margin-top: 32px;
-  height: 448px;
-  display: flex;
-  background: #FFFFFF;
-  outline: 1.5px solid var(--line);
-  outline-offset: -0.75px;
-}
-.feature-media { width: 576px; background: var(--sand); border-right: 1.5px solid var(--line); padding: 32px; display: flex; }
-.feature-media .slot {
-  flex: 1;
-  border: 1px dashed rgba(54,42,34,0.3);
-  display: flex; align-items: center; justify-content: center; text-align: center;
-  font-size: 13px; color: var(--muted); line-height: 1.5;
-}
-.feature-body { flex: 1; padding: 40px; display: flex; flex-direction: column; gap: 16px; }
-.feature-body h3 { margin: 0; font-family: var(--serif); font-weight: 500; font-size: 28px; line-height: 1.2; }
-.feature-body p { margin: 0; font-size: 14px; color: var(--ink-2); line-height: 1.7; }
-.feature-body ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
-.feature-body li { position: relative; padding-left: 18px; font-size: 14px; line-height: 1.6; }
-.feature-body li::before { content: ''; position: absolute; left: 0; top: 8px; width: 6px; height: 6px; border-radius: 50%; background: var(--plum); }
+.work-grid { margin-top: 64px; display: grid; grid-template-columns: 640px 384px; gap: 32px; }
+.shot { margin: 0; display: flex; flex-direction: column; gap: 6px; }
+.shot figcaption { text-align: right; font-size: 10px; letter-spacing: 1.5px; color: var(--muted-2); font-style: italic; line-height: 1.5; }
+.frame { position: relative; border: 1px solid #E4DCCC; border-radius: 8px; background: #FFFFFF; }
+.frame img { border-radius: 7px; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.shot-main { height: 100%; }
+.shot-main .frame { flex: 1; min-height: 0; background: #F8F3E9; }
+.shot-main .frame img { position: absolute; inset: 0; object-position: left top; }
+.shot-side { display: flex; flex-direction: column; gap: 16px; }
+.frame-rbac { height: 160px; }
+.frame-credits { height: 219px; }
+.frame .tl { left: -9px; top: -9px; }
+.frame .tr { right: -9px; top: -9px; }
+.frame .br { right: -9px; bottom: -9px; }
+.frame .x { position: absolute; width: 16px; height: 16px; z-index: 1; pointer-events: none;
+  background:
+    linear-gradient(rgba(43,38,32,0.55), rgba(43,38,32,0.55)) 0 7.5px / 16px 1px no-repeat,
+    linear-gradient(rgba(43,38,32,0.55), rgba(43,38,32,0.55)) 7.5px 0 / 1px 16px no-repeat; }
 
-.shipped { margin-top: 32px; height: 288px; }
-.shipped h3 { margin: 0; height: 32px; display: flex; align-items: center; font-family: var(--serif); font-style: italic; font-weight: 400; font-size: 18px; }
-.shipped .row { height: 64px; border-top: 1px solid rgba(54,42,34,0.45); display: flex; gap: 32px; align-items: center; }
+.shipped { margin-top: 44px; }
+.shipped h3 { margin: 0; height: 32px; display: flex; align-items: center; font-family: var(--serif); font-style: normal; font-weight: 400; font-size: 18px; }
+.shipped .row { min-height: 64px; box-sizing: border-box; border-top: 1px solid rgba(54,42,34,0.45); display: flex; gap: 32px; align-items: center; }
 .shipped .row:last-child { border-bottom: 1px solid var(--line); }
-.shipped .name { width: 304px; flex-shrink: 0; font-weight: 600; font-size: 15px; }
+.shipped .name { width: 304px; flex-shrink: 0; font-weight: 500; font-size: 15px; }
 .shipped .desc { flex: 1; font-size: 14px; color: var(--ink-2); line-height: 1.5; }
-.shipped .role { width: 80px; text-align: right; font-size: 11px; color: var(--muted-2); }
+
+.section-head { position: relative; }
+.work-link { position: absolute; right: 0; bottom: 5px; font-size: 13px; font-weight: 600; color: var(--plum); }
+.work-link:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---- side projects ---- */
 
@@ -207,13 +208,13 @@ a:focus-visible { outline: 2px solid var(--plum); outline-offset: 3px; }
 .delight {
   position: relative;
   margin-top: 96px;
-  height: 480px;
+  height: 417px;
   border-bottom: 1px solid var(--line);
   padding-top: 32px;
   display: flex;
   gap: 64px;
 }
-.delight > .fig { position: absolute; right: 0; top: 488px; text-align: right; }
+.delight > .fig { position: absolute; right: 0; top: 424px; text-align: right; }
 .delight-intro { width: 480px; display: flex; flex-direction: column; gap: 18px; }
 .delight-intro h2 { margin: 0; font-family: var(--serif); font-weight: 500; font-size: 38px; line-height: 1.15; color: var(--plum); }
 .delight-intro .rule { width: 48px; height: 2px; background: var(--plum); }
@@ -228,7 +229,7 @@ a:focus-visible { outline: 2px solid var(--plum); outline-offset: 3px; }
 /* ---- more about me ---- */
 
 .more-title { margin: 80px 0 0; height: 32px; display: flex; align-items: center; font-family: var(--serif); font-weight: 600; font-size: 24px; color: var(--plum); }
-.wire { position: relative; margin-top: 48px; height: 384px; }
+.wire { position: relative; margin-top: 47px; height: 384px; }
 .wire img { display: block; width: 1056px; height: 384px; }
 .wire .fig { position: absolute; right: 0; top: 394px; text-align: right; }
 
@@ -270,6 +271,7 @@ a:focus-visible { outline: 2px solid var(--plum); outline-offset: 3px; }
   gap: 48px;
   align-items: center;
 }
+.footer .diver { display: block; width: 416px; height: auto; flex-shrink: 0; pointer-events: none; }
 .footer .slot {
   width: 224px; height: 208px; flex-shrink: 0;
   border: 1.5px dashed rgba(31,58,61,0.45);
@@ -301,7 +303,7 @@ a:focus-visible { outline: 2px solid var(--plum); outline-offset: 3px; }
   .crosses { display: none; }
   .page { padding: 64px 48px 0; }
   .footer-inner { padding: 0 48px; }
-  .hero, #work, #fun, .feature, .shipped, .projects, .delight, .ideas, .links { height: auto; }
+  .hero, #work, #fun, .shipped, .projects, .delight, .ideas, .links { height: auto; }
   .hero { gap: 32px; }
   .hero-text { width: auto; flex: 1; }
   .hero-art { width: 360px; height: 360px; }
@@ -309,8 +311,9 @@ a:focus-visible { outline: 2px solid var(--plum); outline-offset: 3px; }
   .hero-art img { top: -40px; height: 440px; }
   .hero-art .fig { top: 408px; width: 320px; }
   #work { margin-top: 160px; }
-  .feature { flex-direction: column; }
-  .feature-media { width: auto; height: 280px; border-right: 0; border-bottom: 1.5px solid var(--line); }
+  .work-grid { grid-template-columns: 1fr; }
+  .shot-main .frame { height: 320px; flex: none; }
+  .work-link { position: static; margin-top: 4px; }
   .shipped .row { height: auto; padding: 18px 0; }
   .shipped .name { width: 220px; }
   .projects, .links { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 40px 32px; }
@@ -342,9 +345,7 @@ a:focus-visible { outline: 2px solid var(--plum); outline-offset: 3px; }
   .hero-art .fig { width: auto; margin-top: 8px; white-space: normal; }
   #work { margin-top: 64px; height: auto; }
   #fun { margin-top: 72px; }
-  .feature-media { height: 200px; padding: 20px; }
-  .feature-body { padding: 24px; }
-  .feature-body h3 { font-size: 24px; }
+  .shot-main .frame { height: 220px; }
   .shipped .row { flex-wrap: wrap; gap: 4px 16px; }
   .shipped .name { width: auto; flex: 1; }
   .shipped .desc { order: 3; flex-basis: 100%; }
@@ -356,7 +357,7 @@ a:focus-visible { outline: 2px solid var(--plum); outline-offset: 3px; }
   .link-card { height: 180px; }
   .footer { margin-top: 96px; height: auto; }
   .footer-inner { flex-direction: column; align-items: stretch; padding-top: 72px; padding-bottom: 48px; }
-  .footer .slot { width: 100%; height: 160px; }
+  .footer .diver { width: 100%; max-width: 320px; }
   .footer-text { margin-left: 0; align-items: flex-start; text-align: left; }
   .footer-text h2 { font-size: 24px; }
   .footer-text ul { flex-wrap: wrap; gap: 8px 18px; }
