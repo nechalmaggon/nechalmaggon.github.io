@@ -161,8 +161,8 @@ a:focus-visible { outline: 2px solid var(--plum); outline-offset: 3px; }
   margin-top: 32px;
   height: 544px;
   display: grid;
-  grid-template-columns: repeat(3, 288px);
-  gap: 96px;
+  grid-template-columns: repeat(3, 320px);
+  gap: 48px;
   align-items: start;
 }
 .project { display: flex; flex-direction: column; }
@@ -186,7 +186,7 @@ a:focus-visible { outline: 2px solid var(--plum); outline-offset: 3px; }
   position: relative;
   z-index: 2;
   margin: 20px 0 0 28px;
-  width: 232px;
+  width: 264px;
   background: #FEFCF8;
   border: 1px solid #E6DFD2;
   box-shadow: 0 2px 5px rgba(43,38,32,0.12);
@@ -312,7 +312,10 @@ a:focus-visible { outline: 2px solid var(--plum); outline-offset: 3px; }
   .hero-art .fig { top: 408px; width: 320px; }
   #work { margin-top: 160px; }
   .work-grid { grid-template-columns: 1fr; }
-  .shot-main .frame { height: 320px; flex: none; }
+  .shot-main .frame, .frame-rbac, .frame-credits { height: auto; flex: none; }
+  .shot-main .frame img { position: static; height: auto; }
+  .frame img { height: auto; }
+  .frame .x { display: none; }
   .work-link { position: static; margin-top: 4px; }
   .shipped .row { height: auto; padding: 18px 0; }
   .shipped .name { width: 220px; }
@@ -345,7 +348,6 @@ a:focus-visible { outline: 2px solid var(--plum); outline-offset: 3px; }
   .hero-art .fig { width: auto; margin-top: 8px; white-space: normal; }
   #work { margin-top: 64px; height: auto; }
   #fun { margin-top: 72px; }
-  .shot-main .frame { height: 220px; }
   .shipped .row { flex-wrap: wrap; gap: 4px 16px; }
   .shipped .name { width: auto; flex: 1; }
   .shipped .desc { order: 3; flex-basis: 100%; }
