@@ -175,8 +175,8 @@ a:focus-visible { outline: 2px solid var(--plum); outline-offset: 3px; }
   flex-direction: column;
   transition: transform .2s ease, box-shadow .2s ease;
 }
-.project-card img { display: block; width: 100%; height: 192px; object-fit: cover; flex-shrink: 0; }
-.project-card .body { flex: 1; border-top: 1.5px solid var(--line); padding: 22px 24px 40px; display: flex; flex-direction: column; gap: 10px; }
+.project-card .art { padding: 24px; background: #F8F3E9; flex-shrink: 0; }
+.project-card .body { flex: 1; padding: 20px 24px 32px; display: flex; flex-direction: column; gap: 10px; }
 .project-card h3 { margin: 0; font-family: var(--serif); font-weight: 600; font-size: 20px; }
 .project-card p { margin: 0; font-size: 13px; color: var(--ink-2); line-height: 1.55; flex: 1; }
 .project-card:hover { transform: translate(-3px, -3px); box-shadow: 4px 4px 0 var(--line); }
