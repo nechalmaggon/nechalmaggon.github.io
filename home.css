@@ -120,7 +120,7 @@ a:focus-visible { outline: 2px solid var(--plum); outline-offset: 3px; }
 .section-head { display: flex; flex-direction: column; justify-content: flex-end; gap: 10px; }
 .section-head h2 { margin: 0; font-family: var(--serif); font-weight: 600; font-size: 30px; }
 .section-head p { margin: 0; font-size: 15px; color: var(--ink-2); line-height: 1.7; max-width: 680px; }
-#work { margin-top: 128px; height: 160px; }
+#work { margin-top: 192px; height: 160px; }
 #fun { margin-top: 95px; height: 128px; }
 
 /* ---- day job ---- */
